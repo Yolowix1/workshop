@@ -1,0 +1,86 @@
+
+<head>
+ 
+  <link href="Connexion.css" rel="stylesheet">
+  
+  
+</head>
+
+
+
+<div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" id="user" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" id="password" required="">
+        <label>Password</label>
+      </div>
+      <a  onclick="login()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </a>
+    </form>
+  </div>
+
+<script>
+  const arr = [
+  {
+    id: 1,
+    name: 'login',
+    username: 'login',
+    password: '123'
+  }, 
+  {
+    id: 2,
+    name: 'jean-pierre',
+    username: 'jp',
+    password: '123'
+  },
+  {
+    id: 3,
+    name: 'jules',
+    username: 'jl',
+    password: '123'
+  },
+  {
+    id: 4,
+    name: 'pierre',
+    username: 'pp',
+    password: '123'
+  }
+];
+
+function login(){
+  var isLogin = false;
+  var user = document.getElementById("user").value;
+  var password = document.getElementById("password").value;
+   
+  arr.forEach(function(element)
+  {
+    if(element["username"] === user)
+    {
+      if(element["password"] === password)
+        {
+          isLogin = true;
+        }
+    }
+  });
+  
+  if(isLogin === false)
+  {
+    alert("Username or password was wrong");
+    return;
+  }
+  
+  sessionStorage.setItem('sessionLogin', user);
+  location.href="file:///C:/Users/marcl/Downloads/Calendrier_Pro/Calendrier%20Pro/CalandarPro.html";
+}
+
+</script>

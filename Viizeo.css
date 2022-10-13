@@ -1,0 +1,1846 @@
+
+/*** ViiZEO **/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%
+   }
+   
+   a {
+    color: black;
+    text-decoration: none;
+    
+   }
+   li {
+    list-style: none;
+   }
+   img{
+    max-width: 100%;
+   }
+   .Espace{
+    height: 500px;
+  }
+  
+  p, a, h1, h2, h3{
+  font-family: proxima_nova;
+  }
+  
+  strong{
+  font-weight: bolder;
+  font-size:1.1em
+  }
+  /****Header ***/
+  
+  header{
+    
+    width: 100%;
+    height: 70vh;
+    background-image: url("http://dev.viizeo.com/wp-content/uploads/2022/09/HeaderCusine2.png");
+    background-size: cover;
+  }
+  
+  
+  /* Titre Header */ 
+  
+  .ContentTitreHeader{
+  
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  
+  }
+  
+  .TitreHeader{
+    margin: 50px auto auto auto;
+    color:  var(--blanc);
+    
+    font-size: 120px;
+    font-family: 'calibri', sans-serif;
+    
+  }
+  
+ 
+  
+  
+  :root{
+    --blanc: rgb(248, 248, 248);
+    --rouge: #F40F31;
+    --jaune: #FFCF56;
+    --bleu: #2496E2;
+    --vert: #1BC74E;
+    --Orange: rgb(214, 193, 193);
+    --noir: #1E1E1E;
+    --gris: rgba(139, 139, 139, 0.212);
+    --Shadow: rgba(58, 58, 58, 0.212);
+  
+    
+  }
+  
+  
+  
+  
+  
+  /* Logo */ 
+  .ContentLogo{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }
+  
+  
+  
+  
+  .logo {
+    width: 150px;
+  margin:  20px auto 20px auto;
+  border-radius: 100%;
+   
+   }
+  
+  /*************** Wave ******/
+  
+  @keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+  }
+  .waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+  }
+  .waveWrapperInner {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, black 20%, #27273c 80%);
+  }
+  .bgTop {
+    z-index: -1;
+    opacity: 0.5;
+  }
+  .bgMiddle {
+    z-index: -1;
+    opacity: 0.75;
+  }
+  .bgBottom {
+    z-index: -1;
+  }
+  .wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 71vh;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+  }
+  .waveTop {
+    background-size: 50% 00px;
+  }
+  .waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 0.2s;
+  }
+  .waveMiddle {
+    background-size: 50% 120px;
+  }
+  .waveAnimation .waveMiddle {
+    animation: move_wave s linear infinite;
+  }
+  .waveBottom {
+    background-size: 50% 100px;
+  }
+  .waveAnimation .waveBottom {
+    animation: move_wave 5s linear infinite;
+  }
+  
+  /****** SaleOutSoucing ************/
+  
+  .SaleOutsourcing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 800px;
+    margin: auto;
+  }
+  
+  .ContentSaleOutsourcing{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  
+  .TitreSaleOutsourcing{
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+  margin: 10px auto 20px 0px;
+    
+  }
+  
+  .TextSaleOutsourcing{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    margin: 10px auto 25px 0px;
+    
+  }
+  
+  .ContentImgSaleOutsourcing{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Imgii{
+    width: 115px;
+    height: 400px;
+  }
+  
+  
+  
+  /********* Offline ***********/
+  
+  .Offline{
+    height: 900px;
+    background-image: url("https://dev.viizeo.com/wp-content/uploads/2022/09/FondSiteV3.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    flex-direction: row-reverse;
+  }
+  
+  
+  .ContentOffline{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+  
+  }
+  
+  .TitreOffline{
+    font-size: 110px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    
+  }
+  
+  .TextOffline{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    color: white;
+    margin: 10px auto 25px 0px;
+    text-align: justify;
+    
+  }
+  
+  .BoutonOffline{
+    background-color: var(--bleu);
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    width: 270px;
+    height: 50px;
+    padding: 0.7em;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  
+  .ContentImgOffline{
+  position:relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ImgOffline{
+  position:absolute;
+  top:15%;
+    
+  }
+  
+  /********* Connect ***********/
+  
+  .Connect{
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+  }
+  
+  
+  .ContentConnect{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+    
+  
+  }
+  
+  .TitreConnect{
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    
+    
+  }
+  
+  .TextConnect{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    margin: 10px auto 25px 0px;
+    text-align: justify;
+    
+  }
+  
+  .BoutonConnect{
+    background-color: var(--vert);
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    width: 270px;
+    height: 50px;
+    padding: 0.7em;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  
+  .ContentImgConnect{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ImgConnect{
+    width: 400px;
+    height: 400px;
+  }
+  
+  /***** Nos Garanties ****/
+  
+  .NosGaranties{
+    width: 100%;
+    height: 900px;
+    background-image: url("https://dev.viizeo.com/wp-content/uploads/2022/09/FondGaranties.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+  
+  .ContentNosGaranties{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .TitreNosGaranties{
+    font-size: 110px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    
+  }
+  
+  .TextNosGaranties{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    color: white;
+    margin: 10px auto 25px 0px;
+    text-align: justify;
+    
+  }
+  
+  .ContentPicto{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .Picto{
+    height: 30%;
+    width: 160px; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 30px auto 0px;
+  
+  }
+  
+  .ImgPictoRecrutement{
+    width: 100px;
+  }
+  .ImgPictoTraining{
+    width: 80px;
+  }
+  .ImgPictoQualité{
+    width: 55px;
+  }
+  .ImgPictoROI{
+    width: 90px;
+  }
+  
+  .TitrePicto{
+    font-size: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  
+  
+  .ContentVide{
+    height: 100%;
+    width: 50%;
+   
+  }
+  
+  
+  /********** Temoignage ***********/
+  
+  .Temoignage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    background-image: url("http://dev.viizeo.com/wp-content/uploads/2022/09/iRobot-pour-temoignage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  margin:100px auto;
+    
+  }
+  
+  
+  .TitreTemoignage{
+    font-size: 110px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    margin: 50px;
+    
+  }
+  
+  .TextTemoignage{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    text-align: justify;
+    
+  }
+  
+  /********** ViiZEO ********/
+  
+  .ViiZEO{
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .TitreViiZEO{
+    font-size: 110px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    margin: 50px;
+    
+  }
+  
+  .TitreQuiSommesNous{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    margin: 50px;
+    
+  }
+  
+  .TextQuiSommesNous{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    text-align: justify;
+    
+  }
+  
+  .ContentImageNous{
+    height: 500px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px auto;
+  }
+  
+  .Nous{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 50px;
+  }
+  
+  .ContentQuiSommesNous{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  
+  .Nom{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+    margin: 10px auto;
+  }
+  
+  .Poste{
+    font-size: 20px;
+    height: 50px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin: 0px ;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /******** QUERY ******************/
+  
+  
+  
+  @media (max-width: 1600px){
+    
+  
+    .TitreNosGaranties{
+        font-size: 90px;
+        font-weight: 900;
+        
+        
+    }
+  
+    .ContentPicto{
+        width: 85%;
+        height: 25%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+  
+    
+  /********** ViiZEO ********/
+  
+  .ViiZEO{
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  .TitreViiZEO{
+    font-size: 110px;
+    margin: 50px;
+    
+  }
+  
+  .TitreQuiSommesNous{
+    font-size: 40px;
+    margin: 50px;
+    
+  }
+  
+  .TextQuiSommesNous{
+    font-size: 20px;
+    width: 80%;
+    
+  }
+  
+  .ContentImageNous{
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px auto;
+    flex-wrap: wrap;
+  }
+  
+  .Nous{
+    height: 100%;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 30px;
+  }
+  
+  .ContentQuiSommesNous{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  
+  .Nom{
+    font-size: 25px;
+    margin: 10px auto;
+  }
+  
+  .Poste{
+    font-size: 20px;
+    height: 50px;
+    margin: 0px ;
+  }
+  
+  
+  
+  
+    
+    
+    
+    
+    }
+  
+  
+  
+  
+    @media (max-width: 1600px){
+    
+    
+    /*** Header **/
+    .TitreHeader{
+      font-size:100px
+    }
+    
+  /********** ViiZEO ********/
+  
+  .ViiZEO{
+    width: 100%;
+    height: 2100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  .TitreViiZEO{
+    font-size: 110px;
+    margin: 50px;
+    
+  }
+  
+  .TitreQuiSommesNous{
+    font-size: 40px;
+    margin: 50px;
+    
+  }
+  
+  .TextQuiSommesNous{
+    font-size: 20px;
+    width: 80%;
+    
+  }
+  
+  .ContentImageNous{
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px auto;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  .Nous{
+    height: 50%;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 30px;
+  }
+  
+  
+  .ContentQuiSommesNous{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  
+  .Nom{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: justify;
+    margin: 10px auto;
+  }
+  
+  .Poste{
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    margin: 0px ;
+  }
+  
+      
+        
+        
+  }
+        
+  
+   @media (max-width: 1460px){
+    
+    
+    /*** Header **/
+    .TitreHeader{
+      font-size:100px
+    }
+  }
+  
+  
+  
+  @media (max-width: 1300px){
+    
+  
+  /****** SaleOutSoucing ************/
+  
+  .SaleOutsourcing{
+    
+    width: 90%;
+    height: 800px;
+    margin: auto;
+  }
+  
+  .ContentSaleOutsourcing{
+    height: 100%;
+    width: 70%;
+    
+    flex-direction: column;
+  
+  }
+  
+  .TitreSaleOutsourcing{
+    font-size: 70px;
+  }
+  
+  
+  
+  
+  
+  
+  .ContentImgSaleOutsourcing{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /********* Offline ***********/
+  
+  .Offline{
+    height: 900px;
+    width: 100%;
+    margin: auto;
+    flex-direction: row-reverse;
+  }
+  
+  
+  .ContentOffline{
+    height: 100%;
+    width: 50%;
+    margin: auto 20px auto 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    
+  
+  }
+  
+  
+  .TextOffline{
+    width: 90%;
+  }
+  
+  .ContentImgOffline{
+    margin: auto 20px auto 20px;
+    height: 100%;
+    width: 50%;
+   
+  }
+  
+  
+   /********** Connect  **********/  
+   .TextConnect{
+   
+    width: 90%;
+    
+    
+  }
+  
+  .ContentConnect{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 50px;
+    
+  
+  }
+  
+  
+  
+  /***** Nos Garanties ****/
+  
+  .NosGaranties{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+  
+  .ContentNosGaranties{
+    height: 100%;
+    width: 90%;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .TitreNosGaranties{
+    font-size: 90px;
+    font-weight: 900;
+    
+    
+  }
+  
+  .TextNosGaranties{
+    font-size: 20px;
+    width: 80%;
+    margin: 10px auto 25px 0px;
+  }
+  
+  .ContentPicto{
+    width: 100%;
+    height: 25%;
+    justify-content: flex-start;
+  }
+  
+  
+  .Picto{
+    height: 30%;
+    width: 18%; 
+  
+    margin: auto 30px auto 0px;
+  
+  }
+  
+  .ImgPictoRecrutement{
+    width: 100px;
+  }
+  .ImgPictoTraining{
+    width: 80px;
+  }
+  .ImgPictoQualité{
+    width: 55px;
+  }
+  .ImgPictoROI{
+    width: 90px;
+  }
+  
+  .TitrePicto{
+    font-size: 20px;
+  }
+  
+  
+  
+  .ContentVide{
+    height: 100%;
+    width: 20%;
+   
+  }
+  
+  
+  }
+  
+  
+  
+  @media (max-width: 1100px){
+  
+  .TitreHeader{
+    font-size: 100px;
+  }
+  
+  
+  
+  /** ViiZEO **/
+  
+     
+  /********** ViiZEO ********/
+  
+  .ViiZEO{
+    width: 100%;
+    height: 2500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  
+  .TextQuiSommesNous{
+    font-size: 20px;
+    width: 80%;
+    
+  }
+  
+  .ContentImageNous{
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px auto;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  .Nous{
+    height: 36%;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 30px;
+  }
+  
+  
+  .ContentQuiSommesNous{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  
+  .Nom{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: justify;
+    margin: 10px auto;
+  }
+  
+  .Poste{
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    margin: 0px ;
+  }
+  
+      
+      /** Offline **/
+  .ImgOffline{
+  position:absolute;
+  top:30%;
+    
+  }
+       
+  }
+  
+  
+  
+  
+  
+  @media (max-width: 1000px){
+       
+       
+  /********* Offline ***********/
+  
+  .Offline{
+    height: 1600px;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+  
+  
+  .ContentOffline{
+    height: 20%;
+    width: 90%;
+    margin: 50px;
+   
+    align-items: flex-start;
+    flex-direction: column;
+    
+  
+  }
+  
+  .TitreOffline{
+    font-size: 110px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+   
+  }
+  
+  .TextOffline{
+    font-size: 20px;
+    width: 90%;
+    margin: 10px auto 25px 0px;
+    text-align: justify;
+    
+  }
+  
+  .BoutonOffline{
+    width: 270px;
+    height: 50px;
+    padding: 0.7em;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: auto;
+  }
+  
+  .ContentImgOffline{
+    margin: 50px;
+    height: 30%;
+    width: 100%;
+  }
+  
+  
+  
+  /********* Connect ***********/
+  
+  .Connect{
+    height: 1000px;
+    width: 90%;
+    margin: 0px auto;
+    flex-direction: column;
+  }
+  
+  
+  .ContentConnect{
+    height: 35%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 50px;
+    
+  
+  }
+  .ImgOffline{
+  position:absolute;
+  top:0%;
+    
+  }
+  
+  
+  .TitreConnect{
+    font-size: 110px;   
+  }
+  
+  .TextConnect{
+   
+    width: 90%;
+    margin: 10px auto 25px 0px;
+    text-align: justify;
+    
+  }
+  
+  .BoutonConnect{
+    background-color: var(--vert);
+    color: white;
+    text-align: center;
+    width: 270px;
+    height: 50px;
+    padding: 0.7em;
+    border-radius: 20px;
+    font-size: 20px;
+  margin:auto;
+  }
+  
+  .ContentImgConnect{
+    height: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ImgConnect{
+    width: 400px;
+    height: 400px;
+  }
+  
+  
+  /***** Nos Garanties ****/
+  
+  
+  .TitreNosGaranties{
+    font-size: 80px;
+   
+    
+    
+  }
+  
+  
+   
+  /********** ViiZEO ********/
+  
+  
+  
+  .TextQuiSommesNous{
+    font-size: 20px;
+    width: 90%;
+    
+  }
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  @media (max-width: 900px){
+  
+  .TitreConnect{
+    font-size: 90px;
+  }
+       
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 768px) {
+  
+  /*** Header ***/ 
+  
+  
+  
+  header{
+    
+    width: 100%;
+    height: 50vh;
+   
+  }
+  
+    /** Logo **/
+    .logo {
+        
+        margin: 20px auto 20px auto;
+       
+       }
+  
+  
+       .navbar{
+        width: 100%;
+       }
+  
+       .ContentLogo{
+        width: 50%;
+       }
+       .nav-links{
+        width: 50%;
+       }
+    
+  
+  /* Titre Header */ 
+  
+  .ContentTitreHeader{
+  
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  
+  }
+  
+  .TitreHeader{
+    margin: 170px 0px auto 20px;
+    color:  var(--blanc);
+    font-size: 50px;
+  }
+  
+  
+  /*** Offline **/
+  .Offline{
+    height: 1000px;
+    background-image: url("http://dev.viizeo.com/wp-content/uploads/2022/10/RectangleMobile.png");
+    
+  }
+  
+  .ImgOffline{
+  position:absolute;
+  top:20%;
+  width: 70%;
+    
+  }
+  
+  
+  
+  /****** SaleOutSoucing ************/
+  
+  .SaleOutsourcing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+    margin: 50px auto 0px auto;
+  }
+  
+  .ContentSaleOutsourcing{
+    margin: auto;
+    height: 100%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  
+  .TitreSaleOutsourcing{
+    font-size: 50px;
+  }
+  
+  .TextSaleOutsourcing{
+    font-size: 20px;
+    margin: 10px 0px 25px 0px;
+  }
+  
+  .ContentImgSaleOutsourcing{
+    display: none;
+    height: 100%;
+    width: 30%;
+  }
+  
+  .Imgii{
+    display: none;
+    width: 115px;
+    height: 400px;
+  }
+  
+  /*** WAVE *****/
+  
+  
+  .wave{
+    height: 562px;
+  }
+  
+  
+  
+    
+   /** For Script **/ 
+  
+  
+  .nav-active {
+    background-color:var(--blanc);
+    
+  }
+  
+  .nav-active .LienScript{
+    color:var(--blanc);
+    
+  }
+  
+  .nav-active .hamburger{
+    color:var(--noir);
+    
+  }
+  
+  
+  .nav-active .MobileDropdown{
+    
+    background-color: var(--noir);
+    
+    
+  }
+  
+  /**** Ambassadeur ***/
+  
+  
+  
+  .TitreConnect{
+    font-size: 70px;
+  }
+       
+  
+  .ImgConnect{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  /***** Nos Garanties ****/
+  
+  .NosGaranties{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+  
+  .ContentNosGaranties{
+    height: 100%;
+    width: 100%;
+    align-items:center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .TitreNosGaranties{
+    font-size: 80px;
+    font-weight: 900;
+    
+    
+  }
+  
+  .TextNosGaranties{
+    font-size: 20px;
+    width: 80%;
+     margin: 10px 0px 25px 0px;
+  }
+  
+  .ContentPicto{
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+  }
+  
+  
+  .Picto{
+    height: 30%;
+    width: 15%; 
+  
+    margin: auto 30px auto 0px;
+  
+  }
+  
+  .ContentVide{
+    display: none;
+    height: 100%;
+    width: 20%;
+   
+  }
+  
+  
+  /********** Temoignage ***********/
+  
+  .Temoignage{
+    
+    height: 900px;
+   
+    
+  }
+  
+  
+  .TitreTemoignage{
+    font-size: 90px;
+   
+    margin: 30px;
+    
+  }
+  
+  .TextTemoignage{
+    font-size: 20px;
+    width: 80%;
+    
+  }
+  
+  
+  /********** ViiZEO ********/
+  
+  .ViiZEO{
+    width: 100%;
+    height: 4000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .TitreViiZEO{
+    font-size: 110px;
+    margin: 50px;
+    
+  }
+  
+  .TitreQuiSommesNous{
+    font-size: 40px;
+    margin: 50px;
+    
+  }
+  
+  .TextQuiSommesNous{
+   margin: 10px 0px 25px 0px;
+    font-size: 20px;
+    width: 90%;
+    
+  }
+  
+  .ContentImageNous{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px;
+    
+  }
+  
+  
+  
+  .Nous{
+    height: 23%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 30px;
+  }
+  
+  
+  .ContentQuiSommesNous{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  
+  .Nom{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: justify;
+    margin: 10px auto;
+  }
+  
+  .Poste{
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    margin: 0px ;
+  }
+  
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 600px) {
+  
+  
+  /* Titre Header */ 
+  
+  .ContentTitreHeader{
+  
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  
+  }
+  
+  .TitreHeader{
+    margin: 170px 0px auto 20px;
+    color:  var(--blanc);
+    font-size: 50px;
+     
+  }
+  
+  
+  
+  /**** Connect ***/
+  
+  .TitreOffline{
+    font-size: 60px;
+    font-weight: 900;
+    
+    
+  }
+  
+  .TitreConnect{
+    font-size: 50px;
+  }
+  
+  .ContentOffline{
+    height:35%
+  }
+  
+  .TitreSaleOutsourcing{
+    font-size: 40px;
+    font-weight: 900;
+    
+    
+  }
+  .ImgOffline{
+    top:10%
+  }
+  
+  
+  /***** Nos Garanties ****/
+  
+  .NosGaranties{
+    width: 100%;
+    height: 1500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+  
+  .ContentNosGaranties{
+    height: 100%;
+    width: 100%;
+    align-items:center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .TitreNosGaranties{
+    font-size: 60px;
+    font-weight: 900;
+    
+    
+  }
+  
+  .TextNosGaranties{
+    font-size: 20px;
+    width: 80%;
+    margin: 10px auto 25px auto;
+  }
+  
+  .ContentPicto{
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  
+  .Picto{
+    height: 35%;
+    width: 30%; 
+  
+    margin: auto 0px auto 0px;
+  
+  }
+  
+  
+  .ImgPictoRecrutement{
+    width: 130px;
+  }
+  .ImgPictoTraining{
+    width: 120px;
+  }
+  .ImgPictoQualité{
+    width: 90px;
+  }
+  .ImgPictoROI{
+    width: 130px;
+  }
+  
+  .TitrePicto{
+    font-size: 40px;
+  }
+  
+  
+  
+  
+  .ContentVide{
+    display: none;
+    height: 100%;
+    width: 20%;
+   
+  }
+  
+  
+  /********** Temoignage ***********/
+  
+  .Temoignage{
+    
+    height: 700px;
+   
+    
+  }
+  
+  
+  .TitreTemoignage{
+    font-size: 60px;
+   
+    margin: 30px;
+    
+  }
+  
+  .TextTemoignage{
+    font-size: 17px;
+    width: 80%;
+    
+  }
+  
+  /** ViiZEO **/
+  .ViiZEO{
+    height:4300px;
+    justify-content:space-around;
+  }
+  
+  
+  }
+  
+  
+  
+  
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 450px) {
+  
+  /** Header **/
+  
+  .TitreHeader{
+    margin: 75px auto auto auto;
+    font-size:50px;
+  }
+  
+  /*** Offline **/
+  .ImgOffline{
+  position:absolute;
+  top:10%;
+  width: 90%;
+    
+  }
+  
+  
+  
+  /** Click&Connect **/
+  .ClickConnect{
+    margin:100px auto 0px auto;
+  }
+  /** Text Offline **/ 
+  
+  .TextOffline, .TextConnect{
+    width:100%;
+    margin: 10px 0px 25px 0px;
+  }
+  
+  /** Titre **/
+  
+  .TitreScanConnect{
+    font-size: 30px;
+  }
+  
+  .TitreNosGaranties{
+    font-size: 40px;
+  }
+  
+  .TitreConnect{
+    font-size: 40px;
+  }
+  
+  /** Temoignage **/
+  .TitreTemoignage{
+    font-size:40px;
+  }
+       
+  
+  /*** Garanties **/ 
+  
+  .ContentPicto{
+    height:40%;
+  }
+  
+  .TitrePicto{
+    font-size:30px;
+      margin:10px;
+  }
+  .TitreQuiSommesNous{
+    text-align:center;
+  }
+  
+  .ImgPictoRecrutement{
+    margin: 10px
+    
+  }
+  .ImgPictoTraining{
+    width:90px;
+    margin: 10px
+  }
+  .ImgPictoQualité {
+    width:80px;
+    margin: 10px;
+  }
+  .ImgPictoROI{
+    width:110px;
+    margin: 10px
+  }
+  
+  /** Nous **/ 
+  
+  .ContentImageNous{
+    height:60%;
+  }
+  
+  .TitreViiZEO{
+    font-size: 70px;
+    margin: 0px auto;
+  }
+  
+  .Nous{
+    height:18%;
+  }
+  
+  .ViiZEO{
+    height:4300px;
+    justify-content:space-around;
+  }
+  
+  .ContentQuiSommesNous{
+    margin:0px auto;
+    height:30%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  

@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="Header.css" rel="stylesheet">
+    <link href="Viizeo.css" rel="stylesheet">
+    <link href="Sport.css" rel="stylesheet">
+  <title>Sport</title>
+</head>
+
+
+	
+<header>
+	
+<nav class="navbar " >
+    <div class="ContentLogo">
+        <a href="file:///C:/Users/marcl/Downloads/Calendrier_Pro/Calendrier%20Pro/CalandarPro.html"><img  src="img/AVEON.gif" class="logo" alt="Logo Aveon" ></a>
+        <!-- NAVIGATION MENU -->
+    </div>
+        <ul class="nav-links" id="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu ">
+            
+            
+            <li><a href="file:///C:/Users/marcl/Downloads/Calendrier_Pro/Calendrier%20Pro/CalandarPro.html" class="LienScript"  >Calendrier</a></li>
+            <li><a href="file:///C:/Users/marcl/Downloads/Calendrier_Pro/Calendrier%20Pro/Sport.html" class="LienScript"  >Tous les sports</a></li>
+            
+          </div>
+        </ul>
+  
+      </nav>
+  
+          
+          
+    <script>
+      $(document).ready(function() {
+   $(".bttnclick").on("click", function() {
+      $(".NavbarDropDesktop").css("display", "flex");
+      $(".NavbarDropDesktop").css("box-shadow", "0 5px 10px var(--Shadow)");
+     $(".navbar").css("background-color", "var(--blanc)");
+     $(".LienScript").css("color", "var(--noir)");
+     $(".hamburger").css("color", "var(--noir)");
+     $(".logo").css("content", "url('https://dev.viizeo.com/wp-content/uploads/2022/09/ViiZEO-V3.png')");
+  
+    });
+  });
+     
+  
+      </script>
+      
+    </header>      
+  
+
+<section class="LesSports">
+    
+      <iframe src="https://public.opendatasoft.com/explore/embed/dataset/res_equipements_2017/map/?disjunctive.caracteristiques&refine.comlib=Toulouse&location=12,43.59705,1.43073&basemap=jawg.light&static=false&datasetcard=false&scrollWheelZoom=false" width="100%" height="800" frameborder="0"></iframe>
+
+
+    </section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

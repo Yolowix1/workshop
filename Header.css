@@ -1,0 +1,600 @@
+
+/** Header**/ 
+
+ 
+a {
+    color: black;
+    text-decoration: none;
+    
+   }
+   li {
+    list-style: none;
+   }
+   img{
+    max-width: 100%;
+   }
+   .Espace{
+    height: 500px;
+  }
+  
+  p, a, h1, h2, h3{
+  font-family: proxima_nova;
+  }
+  
+  strong{
+  font-weight: bolder;
+  font-size:1.1em
+  }
+  
+  
+  
+  
+  :root{
+    --blanc: rgb(248, 248, 248);
+    --rouge: #F40F31;
+    --jaune: #FFCF56;
+    --bleu: #2496E2;
+    --vert: #1BC74E;
+    --Orange: rgb(214, 193, 193);
+    --noir: #191919;
+    --gris: rgba(139, 139, 139, 0.212);
+    --Shadow: rgba(58, 58, 58, 0.212);
+  
+    
+  }
+  
+  
+  
+  
+  
+  /* Logo */ 
+  .ContentLogo{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+  
+  
+  .logo {
+    width: 170px;
+  margin:  20px auto 20px auto;
+   
+   }
+  
+  /* NAVBAR STYLING STARTS */
+  .navbar {
+    z-index: 10000;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: auto;
+   
+   }
+  
+  .nav-links{
+    margin: auto auto auto 0px;
+    width: 70%;
+    
+   }
+  
+   .LienScript{
+    color:  var(--blanc);
+    font-family: 'Inter', sans-serif;
+   }
+  
+   
+   /* NAVBAR MENU */
+   .menu {
+    
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+  
+   /******************************** For Script *************************/ 
+  
+  
+  .nav-active {
+    background-color:var(--blanc);
+    box-shadow: 0 5px 10px var(--Shadow) ;
+    
+  }
+  
+  .nav-active .LienScript{
+    color:var(--noir);
+    
+  }
+  
+  .nav-active .LienScriptDesktop{
+    color:var(--noir);
+    
+  }
+  
+  .nav-active .dropdown{
+    
+    background-color: var(--blanc);
+    
+    
+  }
+  
+  .nav-active .logo{
+    
+    content: url("https://dev.viizeo.com/wp-content/uploads/2022/09/ViiZEO-V3.png");
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+   /**** li hover ****/
+   
+  
+  
+   .menu li {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 180px;
+    padding: 0.6em 0em;
+    margin: auto;
+   
+   }
+  
+   
+  
+  
+   
+  
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: var(--blanc);
+    z-index: 10;
+    width: 100%;
+    left: 0%;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 0px 0px 8px 8px;
+    top: 40px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 1em 1em;
+    text-align: center;
+   }
+  
+  
+   .services:hover .headerDropdown {
+    display: block;
+   }
+  
+  
+   /*** DropDown Desktop ***/
+  
+   .NavbarDropDesktop{
+    background-color: var(--blanc);
+    z-index: 100;
+    width: 100%;
+    height: 120px;
+    margin: 50px auto auto auto;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 8px 20px 0px var(--Shadow);
+  
+   }
+  
+   .headerDropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+   }
+  
+   .LinkDropdown{
+    margin: auto;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    }
+    .LinkDropdown:hover{
+        transition: all 0.5s ease-out;
+        box-shadow: 0px 8px 20px 0px var(--Shadow);
+       }
+    
+  
+  
+   .LienDropDownDesktop{
+        margin: auto;
+        font-size: 20px;
+        color: #191919;
+        font-family: 'Inter', sans-serif;
+        
+   }
+  
+  
+   .ResumeLien{
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+   }
+   
+  
+  
+  
+  
+  /*RESPONSIVE NAVBAR MENU STARTS*/
+  /* CHECKBOX HACK */
+  input[type=checkbox]{
+  display: none;
+  } 
+  /*HAMBURGER MENU*/
+  .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  }
+  
+  
+  
+  /*** Contact et Bouton **/
+  
+  .BoutonContactMenu{
+  border-radius: 30px;
+   
+   background-color:  var(--vert);
+   padding: 0.5em 2em;
+   color: var(--blanc);
+   transition: all 0.5s ease;
+   font-family: 'Inter', sans-serif;
+  }
+  
+  .BoutonContactMenu:hover{
+  border-radius: 30px;
+   
+    color: var(--blanc);
+    padding: 0.5em 3.2em;
+    box-shadow: 0px 8px 20px 0px var(--Shadow);
+    transition: all 0.5s ease;
+  }
+  
+  .Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  
+  }
+  
+  .BoutonContact{
+   border-radius: 30px;
+   font-size: 1.3em;
+   background-color:  var(--rouge);
+   padding: 0.5em 4em;
+   color: var(--blanc);
+   transition: all 0.5s ease;
+  }
+  .BoutonContact:hover{
+    border-radius: 30px;
+    font-size: 1.3em;
+    color: var(--blanc);
+    padding: 0.5em 5em;
+    box-shadow: 0px 0px 20px 5px var(--Shadow);
+    transition: all 0.5s ease;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /******** QUERY ******************/
+  
+  
+  
+  
+  @media (max-width: 1000px){
+    .menu li {
+       
+        width: 140px;
+        padding: 0.6em 0em;
+        
+       }
+  
+  
+       .dropdown {
+       
+        width: 100%;
+        left: 0%;
+        position: absolute; /*WITH RESPECT TO PARENT*/
+        display: none;
+        border-radius: 0px 0px 8px 8px;
+        top: 45px;
+       }
+  
+  
+       .dropdown li {
+        padding: 10px;
+       
+        text-align: center;
+       }
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 768px) {
+  
+  /*** Header ***/ 
+  
+  
+  
+  header{
+    
+    width: 100%;
+  
+    /*
+    height: 50vh;*/
+  
+  
+   
+  }
+  /*** DropDown Desktop ***/
+  
+  .headerDropdown{
+     display: none !important;
+  }
+  
+   .NavbarDropDesktop{
+    display: none !important;
+   }
+  
+  
+    /** Logo **/
+    .logo {
+        
+        margin: 20px auto 20px auto;
+       
+       }
+  
+  
+       .navbar{
+        width: 100%;
+       }
+  
+       .ContentLogo{
+        width: 50%;
+       }
+       .nav-links{
+        width: 50%;
+       }
+    
+  
+  /* Titre Header */ 
+  
+  .ContentTitreHeader{
+  
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  
+  }
+  
+  .TitreHeader{
+    margin: 170px 0px auto 20px;
+    color:  var(--blanc);
+    font-size: 50px;
+  }
+  
+  
+  
+  
+  .waveWrapper, .waveAnimation{
+        display: none;
+    }
+  
+  
+    
+   /** For Script **/ 
+  
+  
+  .nav-active {
+    background-color:var(--blanc);
+    
+  }
+  
+  .nav-active .LienScript{
+    color:var(--blanc);
+    
+  }
+  
+  .nav-active .hamburger{
+    color:var(--noir);
+    
+  }
+  
+  
+  .nav-active .MobileDropdown{
+    
+    background-color: var(--noir);
+    
+    
+  }
+  
+  
+  
+  /***** Menu ****/
+  
+   
+  .menu { 
+  display:none;
+  position: absolute;
+  background-color: var(--noir);
+  top: 100%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  
+  }
+  .menu li {
+    
+    width: 200px;
+    padding: 40px 14px;
+    
+   }
+  
+  
+  
+  
+  
+   
+  .menu li + li {
+  margin-top: 12px;
+  
+  }
+  input[type=checkbox]:checked ~ .menu{
+  display: block;
+  }
+  .hamburger {
+  display: block;
+  color: var(--blanc);
+  margin:auto 100px ;
+  }
+  
+  
+  .services:hover .dropdown{
+    display: block;
+  }
+  
+  .LienScript{
+    color: var(--blanc) !important;
+  }
+  
+  .dropdown {
+   
+  background-color: var(--noir);
+  border-radius: 8px 8px 8px 8px ;
+  left: -35%;
+  top: 100px;
+  transform: translateX(35%);
+  box-shadow: 0px 8px 20px 0px var(--Shadow);
+  
+  }
+  .dropdown li:hover {
+  background-color:  var(--noir);
+  
+  }
+  
+  /***  Contact et bouton menu ***/ 
+  
+  
+  
+  
+  /*** Contact et Bouton **/
+  
+  .BoutonContactMenu{
+  border-radius: 30px;
+   
+   background-color:  var(--blanc);
+   padding: 0.5em 2em;
+   color: var(--noir);
+   transition: all 0.5s ease;
+  }
+  
+  .BoutonContactMenu:hover{
+  border-radius: 30px;
+   
+    color: var(--noir);
+    padding: 0.5em 3.2em;
+    box-shadow: 0px 8px 20px 0px var(--Shadow);
+    transition: all 0.5s ease;
+  }
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 600px) {
+  
+  
+  /* Titre Header */ 
+  
+  .ContentTitreHeader{
+  
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  
+  }
+  
+  .TitreHeader{
+    margin: 170px 0px auto 20px;
+    color:  var(--blanc);
+    font-size: 50px;
+     
+  }
+  
+  
+  
+  
+  }
+  
